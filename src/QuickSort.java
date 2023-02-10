@@ -1,4 +1,4 @@
-public class QuickSort<E extends Comparable> extends Sort<E> {
+public class QuickSort<E extends Comparable<E>> extends Sort<E> {
     @Override
     protected void sort() {
         sort(0, array.length);
@@ -23,6 +23,10 @@ public class QuickSort<E extends Comparable> extends Sort<E> {
     }
 
     private int pivotIndex(int begin, int end) {
+
+        // 随机选择一个元素跟 begin 位置元素进行交换. 为了降低轴点左右两侧分布极度不均匀的情况出现
+        swap(begin, begin + (int)(Math.random() * (end - begin)));
+
         //  假设取 begin 位置元素当做轴点, 备份 begin 位置元素.
         E pivot = array[begin];
         // end 之前是数组长度, 现指向数组最后一个元素位置

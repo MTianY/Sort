@@ -1,6 +1,6 @@
 // 归并排序
 
-public class MergeSort<E extends Comparable> extends Sort<E> {
+public class MergeSort<E extends Comparable<E>> extends Sort<E> {
 
     private E[] leftArray;
 

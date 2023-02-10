@@ -1,4 +1,4 @@
-public class InsertionSort2<E extends Comparable> extends Sort<E> {
+public class InsertionSort2<E extends Comparable<E>> extends Sort<E> {
     @Override
     protected void sort() {
         for (int beigin = 1; beigin < array.length; beigin++) {

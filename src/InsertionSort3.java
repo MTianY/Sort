@@ -1,6 +1,6 @@
 // 插入排序优化, 利用二分搜索, 减少比较次数
 
-public class InsertionSort3<E extends Comparable> extends Sort<E> {
+public class InsertionSort3<E extends Comparable<E>> extends Sort<E> {
 
     // 0  1  2  3   4   5   6   7   8   9
     // 4, 1, 4, 19, 29, 9, 331, 44, 241

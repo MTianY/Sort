@@ -2,7 +2,7 @@
  * 堆排序
  */
 
-public class HeapSort<E extends Comparable> extends Sort<E> {
+public class HeapSort<E extends Comparable<E>> extends Sort<E> {
     // 堆大小
     private int heapSize;
     @Override

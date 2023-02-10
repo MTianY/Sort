@@ -2,7 +2,7 @@
  * 选择排序
  */
 
-public class SelectionSort<E extends Comparable> extends Sort<E> {
+public class SelectionSort<E extends Comparable<E>> extends Sort<E> {
     @Override
     protected void sort() {
         for (int end = array.length-1; end > 0 ; end--) {
