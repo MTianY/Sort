@@ -56,6 +56,7 @@ public class ShellSort<E extends Comparable<E>> extends Sort<E> {
             stepSequence.add(0, step);
             k++;
         }
+        return stepSequence;
     }
 
 }
